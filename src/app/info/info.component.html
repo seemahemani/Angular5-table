@@ -27,12 +27,14 @@
     </p>
     <p>
         The following further optimisation are possible which will significantly improve the performance,
+
         <mat-list role="list">
             <mat-list-item role="listitem">1. Currently the pagination is being performed on client side since the API's doesn't fully support it. This means that we are storing all the data on the client side and doing all the processing on client side. The improvement could be to
                 implement an API that returns only the requested number of items matching the filter criteria.</mat-list-item>
             <mat-list-item role="listitem">2. Even the filtering on data is done on the client which should ideally be done on server side to improve the performance.</mat-list-item>
             <mat-list-item role="listitem">3. Likewise, the sorting part can also be moved to server side.</mat-list-item>
         </mat-list>
+
     </p>
     <p>The above optimisations will help us in keeping the client side very light and also will significantly improve the performance and responsiveness.
     </p>
