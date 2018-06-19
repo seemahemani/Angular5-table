@@ -1,6 +1,10 @@
-# Swfishertest
+This is single page application created using Angular5 and Material design of Angular5.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+In Home component, we are displaying data in table with following features.
+1. Get the data from http service, dynamically create columns, iterate data rowwise and display in table.
+2. Filter on whole table content.
+3. Sorting on all columns.
+4. Client side pagination to dispaly 50, 100, 1000 rows on page.
 
 ## Development server
 
