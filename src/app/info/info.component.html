@@ -1,9 +1,10 @@
 <div class="mat-elevation-z8" style="padding: 12px;">
+    <h3>About:</h3>
     <p>
         This is single page application created using Angular5 and Material design of Angular5.
     </p>
     <p>
-        In this application we have used angular5 routing for navigation of menus.
+        In this application, we have used Angular5 routing for navigation of menus.
         <mat-list role="list">
             <mat-list-item role="listitem">1. Home</mat-list-item>
             <mat-list-item role="listitem">2. Information</mat-list-item>
@@ -12,34 +13,36 @@
     <p>
         In Home component, we are displaying data in table with following features.
         <mat-list role="list">
-            <mat-list-item role="listitem">1. Get the data from http service, dynamically create columns, iterate data rowwise and display in table.</mat-list-item>
+            <mat-list-item role="listitem">1. Get the data from http service, dynamically create columns, iterate data row wise and display in table.</mat-list-item>
             <mat-list-item role="listitem">2. Filter on whole table content.</mat-list-item>
             <mat-list-item role="listitem">3. Sorting on all columns.</mat-list-item>
-            <mat-list-item role="listitem">4. Client side pagination to dispaly 50, 100, 1000 rows on page.</mat-list-item>
+            <mat-list-item role="listitem">4. Client side pagination to display 50, 100, 1000 rows on page.</mat-list-item>
         </mat-list>
     </p>
     <p>
-        In this application I have created service for http api call and also have created pipe for capitalize first letter of text (table header), so that we can use pipe in entire application whenever required to capitalize text, no need to write logic in all
-        components.
+        In this application, I have created service for http api call and also have created pipe for capitalize first letter of text (table header), so that we can use pipe in entire application whenever required to capitalize text, no need to write logic in
+        all components.
     </p>
+    <h3>Assumption:</h3>
     <p>
-        From the data I am showing all the columns, thumbnailurl are using for generating image. and url is clickable which will open in new tab.
+        The application is built assuming that there's just one API call to get all the data and from the data, thumbnailurl are using for generating image and url is clickable which opens in a new tab.
     </p>
-    <p>
+    <h3>Further possible optimisation:</h3>
+    <div>
         The following further optimisation are possible which will significantly improve the performance,
 
-        <mat-list role="list">
-            <mat-list-item role="listitem">1. Currently the pagination is being performed on client side since the API's doesn't fully support it. This means that we are storing all the data on the client side and doing all the processing on client side. The improvement could be to
-                implement an API that returns only the requested number of items matching the filter criteria.</mat-list-item>
-            <mat-list-item role="listitem">2. Even the filtering on data is done on the client which should ideally be done on server side to improve the performance.</mat-list-item>
-            <mat-list-item role="listitem">3. Likewise, the sorting part can also be moved to server side.</mat-list-item>
-        </mat-list>
+        <p>1. Currently the pagination is being performed on client side since the API's doesn't fully support it. This means that we are storing all the data on the client side and doing all the processing on client side. The improvement could be to implement
+            an API that returns only the requested number of items matching the filter criteria.</p>
+        <p>2. Even the filtering on data is done on the client which should ideally be done on server side to improve the performance.</p>
+        <p>3. Likewise, the sorting part can also be moved to server side.</p>
 
-    </p>
+    </div>
     <p>The above optimisations will help us in keeping the client side very light and also will significantly improve the performance and responsiveness.
     </p>
+    <h3>Limitation:</h3>
     <p>
         Currently, this application doesn't handle any error in-case the API fails.
     </p>
+    <h3>Source:</h3>
     <p>Source code can be found here: <a href="https://github.com/seemahemani/Angular5-table" target="_blank">https://github.com/seemahemani/Angular5-table</a></p>
 </div>
