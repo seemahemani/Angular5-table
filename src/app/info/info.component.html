@@ -1,0 +1,35 @@
+<div class="mat-elevation-z8" style="padding: 12px;">
+    <p>
+        This is single page application created using Angular5 and Material design of Angular5.
+    </p>
+    <p>
+        In this application we have used angular5 routing for navigation of menus.
+        <mat-list role="list">
+            <mat-list-item role="listitem">1. Home</mat-list-item>
+            <mat-list-item role="listitem">2. Information</mat-list-item>
+        </mat-list>
+    </p>
+    <p>
+        In Home component, we are displaying data in table with following features.
+        <mat-list role="list">
+            <mat-list-item role="listitem">1. Get the data from http service, dynamically create columns, iterate data rowwise and display in table.</mat-list-item>
+            <mat-list-item role="listitem">2. Filter on whole table content.</mat-list-item>
+            <mat-list-item role="listitem">3. Sorting on all columns.</mat-list-item>
+            <mat-list-item role="listitem">4. Client side pagination to dispaly 50, 100, 1000 rows on page.</mat-list-item>
+        </mat-list>
+    </p>
+    <p>
+        In this application I have created service for http api call and also have created pipe for capitalize first letter of text (table header), so that we can use pipe in entire application whenever required to capitalize text, no need to write logic in all
+        components.
+    </p>
+    <p>
+        From the data I am showing all the columns, thumbnailurl are using for generating image. and url is clickable which will open in new tab.
+    </p>
+    <p>
+        In real application we can improve performance by doing search and pagination on server side. should not process large amount of data on client side, rather server side processing will make application faster. Also if there are huge number of data we
+        could use lazy loading concept for performance improvement.
+    </p>
+    <p>
+        We can also do error handling in case of API breaking.
+    </p>
+</div>

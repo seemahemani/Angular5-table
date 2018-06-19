@@ -1,0 +1,20 @@
+.table-list {
+    padding: 18px;
+    .mat-form-field {
+        font-size: 14px;
+        width: 100%;
+    }
+    .mat-cell,
+    .mat-header-cell {
+        margin: 12px;
+        word-break: break-all;
+    }
+    table {
+        width: 100%;
+    }
+    .mat-column-thumbnailUrl {
+        text-align: center;
+        height: 30px;
+        width: 30px;
+    }
+}

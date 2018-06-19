@@ -1,0 +1,15 @@
+<div class="mat-elevation-z8 table-list">
+    <mat-form-field>
+        <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Filter">
+    </mat-form-field>
+    <mat-table #table *ngIf="dataSource" [dataSource]="dataSource" matSort class="mat-elevation-z8">
+        <ng-container *ngFor="let disCol of displayedColumns; let colIndex = index" matColumnDef="{{disCol}}">
+            <mat-header-cell *matHeaderCellDef mat-sort-header>{{disCol | capitalize}}</mat-header-cell>
+            <mat-cell *matCellDef="let element " [innerHTML]="printValue(element[disCol], disCol)">
+            </mat-cell>
+        </ng-container>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
+    <mat-paginator [pageSizeOptions]="[50, 100, 1000]" showFirstLastButtons></mat-paginator>
+</div>
